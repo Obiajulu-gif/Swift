@@ -7,9 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+       colors: {
+        purple: {
+          900: '#4B0082', // Dark Purple
+          800: '#6A0DAD', // Lighter purple for backgrounds
+          600: '#9B30FF', // For buttons
+        },
       },
     },
   },

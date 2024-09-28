@@ -1,4 +1,4 @@
-// No "use client" here, as it's server-side
+import "./globals.css";
 export const metadata = {
 	title: "Swift",
 	description: "A platform to sell digital products",
