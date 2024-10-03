@@ -12,7 +12,7 @@ const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer className="bg-black text-white py-10">
+		<footer id="footer" className="bg-black text-white py-10">
 			<div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
 				{/* Logo Section */}
 				<div>

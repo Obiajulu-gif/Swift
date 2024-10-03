@@ -35,7 +35,7 @@ const FAQSection = () => {
 	];
 
 	return (
-		<section className="py-16 max-w-screen-md mx-auto">
+		<section id="faq" className="py-16 max-w-screen-md mx-auto">
 			<h2 className="text-2xl font-bold text-center text-black mb-8">
 				Frequently Asked Questions
 			</h2>
