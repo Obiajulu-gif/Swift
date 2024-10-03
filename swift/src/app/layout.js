@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/footer";
 
 export const metadata = {
 	title: "Swift",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
 				{/*********************************Navbar Section **********************************/}
 				<Navbar />
 				<main>{children}</main> {/* Render all child components/pages */}
+				<Footer/>
 			</body>
 		</html>
 	);
