@@ -6,7 +6,7 @@ const TeamSection = () => {
 		{
 			name: "Okoye Emmanuel Obiajulu",
 			role: "Team Lead and Frontend Developer",
-			image: "/images/team-lead.jpg",
+			image: "/images/teamLead.png",
 		},
 		{
 			name: "Joshua",
