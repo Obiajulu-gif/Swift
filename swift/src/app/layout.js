@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import Sidebar from "./dashboard/sidebar"; 
-import TopBar from "./dashboard/topBar"; 
+import TopBar from "./dashboard/topbar"; 
 
 export default function RootLayout({ children }) {
   const pathname = usePathname(); // Get the current pathname

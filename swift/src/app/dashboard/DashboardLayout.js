@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "./sidebar";
-import TopBar from "./topBar";
+import TopBar from "./topbar";
 
 const DashboardLayout = ({ children }) => {
 	return (
