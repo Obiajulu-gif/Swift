@@ -12,7 +12,7 @@ const Hero = () => {
 						Build Faster with <br /> Sui Blockchain Tools.
 					</h1>
 					<p className="text-xl mb-8">
-						A marketplace tailored for developers – discover the best tools, pay{" "}
+						A marketplace tailored for developers, discover the best tools, pay{" "}
 						<br />
 						seamlessly, and get back to building faster.
 					</p>
