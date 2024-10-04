@@ -5,16 +5,16 @@ const ProductDetailsTabs = () => {
 	const [activeTab, setActiveTab] = useState("details");
 
 	return (
-		<div className="max-w-screen-lg mx-auto py-8">
+		<div className="max-w-screen-lg mx-auto py-8 px-4 lg:px-0">
 			{/* Tabs */}
 			<div className="border-b border-gray-200 mb-6">
-				<nav className="flex space-x-8">
+				<nav className="flex space-x-4 lg:space-x-8 overflow-x-auto">
 					<button
 						className={`text-sm pb-4 ${
 							activeTab === "details"
 								? "text-orange-500 border-orange-500"
 								: "text-gray-500"
-						} font-semibold border-b-2`}
+						} font-semibold border-b-2 focus:outline-none`}
 						onClick={() => setActiveTab("details")}
 					>
 						Details
@@ -24,7 +24,7 @@ const ProductDetailsTabs = () => {
 							activeTab === "comments"
 								? "text-orange-500 border-orange-500"
 								: "text-gray-500"
-						} font-semibold border-b-2`}
+						} font-semibold border-b-2 focus:outline-none`}
 						onClick={() => setActiveTab("comments")}
 					>
 						Comments
@@ -38,7 +38,7 @@ const ProductDetailsTabs = () => {
 				<div className="lg:w-3/4 w-full mb-6 lg:mb-0">
 					{activeTab === "details" ? (
 						<div>
-							<p className="text-gray-700 text-sm mb-4">
+							<p className="text-gray-700 text-sm lg:text-base mb-4">
 								Design a website for your business with this SaaS website UI Kit
 								featuring multiple layouts, breakpoints, and 3D elements in
 								different styles. Copy and paste your website design into Framer
@@ -46,11 +46,10 @@ const ProductDetailsTabs = () => {
 							</p>
 
 							{/* Links */}
-							<div className="space-y-2 text-sm">
+							<div className="space-y-2 text-sm lg:text-base">
 								<a href="#" className="text-blue-500 hover:underline">
 									Live Framer Demo Website →
 								</a>
-								<br />
 								<a href="#" className="text-blue-500 hover:underline">
 									Figma to HTML with Framer Plugin →
 								</a>

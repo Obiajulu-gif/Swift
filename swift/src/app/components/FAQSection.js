@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { FiPlus } from "react-icons/fi";
 
@@ -17,20 +17,19 @@ const FAQSection = () => {
 
 	const faqs = [
 		{
-			question: "How does the pricing work for teams?",
-			answer: "This is the answer for the first FAQ.",
+			question: "Where can I find tutorials or guides?",
+			answer:
+				"Visit our resources page for tutorials, FAQs, and guides on using the marketplace.",
 		},
 		{
-			question: "How does the pricing work for teams?",
-			answer: "This is the answer for the second FAQ.",
+			question: "How can I stay updated on marketplace news?",
+			answer:
+				"Subscribe to our newsletter and follow us on social media for the latest updates and announcements.",
 		},
 		{
-			question: "How does the pricing work for teams?",
-			answer: "This is the answer for the third FAQ.",
-		},
-		{
-			question: "How does the pricing work for teams?",
-			answer: "This is the answer for the fourth FAQ.",
+			question: "How do I buy or sell an asset?",
+			answer:
+				"To buy, simply connect your wallet, browse listings, and follow the prompts. To sell, list your asset with the desired price.",
 		},
 	];
 

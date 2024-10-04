@@ -20,10 +20,12 @@ const Footer = () => {
 						<img
 							src="/images/logo.png"
 							alt="SwiftTeam Logo"
-							className="h-10 w-auto"
+							className="h-10 w-auto animate-pulse"
 						/>
 					</div>
-					<p>{new Date().getFullYear()} All rights reserved. Made by SwiftTeam</p>
+					<p>
+						{new Date().getFullYear()} All rights reserved. Made by SwiftTeam
+					</p>
 				</div>
 
 				{/* Quick Links */}
@@ -53,22 +55,25 @@ const Footer = () => {
 					<h4 className="text-lg font-bold mb-4">Contacts</h4>
 					<ul className="space-y-2">
 						<li className="flex items-center">
-							<FiMail className="mr-2" /> info@swiftteam
+							<FiMail className="mr-2" /> teamswift.sui@gmail.com
 						</li>
 						<li className="flex items-center">
-							<FiPhone className="mr-2" /> 0903129414
+							<FiPhone className="mr-2" /> +2349 0694 06647
 						</li>
 					</ul>
 					{/* Social Icons */}
 					<div className="flex space-x-4 mt-4">
-						<a href="#" className="hover:text-gray-400">
-							<FiInstagram size={20} />
-						</a>
-						<a href="#" className="hover:text-gray-400">
+						<a
+							href="https:/twitter.com/TeamSwiftsui"
+							className="hover:text-gray-400"
+						>
 							<FiTwitter size={20} />
 						</a>
-						<a href="#" className="hover:text-gray-400">
-							<FiLinkedin size={20} />
+						<a
+							href="https://github.com/Obiajulu-gif/Swift"
+							className="hover:text-gray-400"
+						>
+							<FiGithub size={20} />
 						</a>
 					</div>
 				</div>

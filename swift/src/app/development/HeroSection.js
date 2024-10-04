@@ -9,11 +9,13 @@ export default function HeroSection() {
 			<div className="relative z-10 max-w-screen-lg mx-auto text-left">
 				{" "}
 				<h1 className="text-4xl sm:text-5xl font-extrabold mb-6">
-					Build In Minutes, Publish Sites In Seconds.
+					At Swift, we’re redefining how you buy, sell, and trade in the digital
+					realm.
 				</h1>
 				<p className="text-lg sm:text-xl mb-6 mx-auto">
-					Turn Your Ideas Into a Real Website Quickly. Select From Thousands Of
-					Free And Premium Website Templates And Customize Them As You See Fit.
+					Our innovative Web3 marketplace empowers creators, collectors, and
+					investors to engage in a decentralized ecosystem where transparency
+					and security are paramount.
 				</p>
 				{/* Search Bar */}
 				<div className="space-x-2">
