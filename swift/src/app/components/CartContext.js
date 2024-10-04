@@ -1,4 +1,5 @@
-"use client";
+"use client"; // Ensure this is at the top of your CartContext.js file
+
 import React, { createContext, useContext, useState } from "react";
 
 // Create a context
@@ -30,6 +31,7 @@ export const CartProvider = ({ children }) => {
 	);
 };
 
+// Custom hook to use CartContext
 export const useCart = () => {
 	const context = useContext(CartContext);
 

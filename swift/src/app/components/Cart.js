@@ -1,81 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { FiShoppingCart, FiHeart, FiStar } from "react-icons/fi";
-import { useCart } from "./CartContext"; 
+import { FiTrash } from "react-icons/fi";
 
-const ProductListSection = () => {
-	const { addToCart } = useCart(); // Get addToCart function from context
+const Cart = () => {
+  const [cart, setCart] = useState([]);
 
-	const products = [
-		{
-			id: 1,
-			name: "CodeCraft Pro",
-			image: "/images/codeCraft.png",
-			price: "95.00",
-			rating: 5,
-			reviews: 91,
-		},
-		{
-			id: 2,
-			name: "Blockchain Builders",
-			image: "/images/BlockchainBuilder.png",
-			price: "95.00",
-			rating: 4,
-			reviews: 91,
-		},
-		{
-			id: 3,
-			name: "DApp Designer Kit",
-			image: "/images/DAPP.png",
-			price: "95.00",
-			rating: 5,
-			reviews: 91,
-		},
-		// Other products...
-	];
+  useEffect(() => {
+    const savedCart = JSON.parse(localStorage.getItem("cart")) || [];
+    setCart(savedCart);
+  }, []);
 
-	return (
-		<div className="w-full">
-			{/* Product Grid */}
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-				{products.map((product) => (
-					<div key={product.id} className="border rounded-lg shadow-md p-4">
-						<div className="relative w-full h-48">
-							<Image
-								src={product.image}
-								alt={product.name}
-								layout="fill"
-								objectFit="cover"
-								className="rounded-t-lg"
-							/>
-						</div>
-						<h3 className="mt-4 text-lg font-bold">{product.name}</h3>
-						<p className="text-gray-500 mb-2">${product.price}</p>
+  const removeFromCart = (productId) => {
+    const updatedCart = cart.filter((item) => item.id !== productId);
+    setCart(updatedCart);
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+    window.dispatchEvent(new Event("storage"));
+  };
 
-						{/* Star Ratings */}
-						<div className="flex items-center mb-2">
-							{Array(product.rating)
-								.fill()
-								.map((_, i) => (
-									<FiStar key={i} className="text-yellow-500" />
-								))}
-							<span className="text-sm text-gray-500 ml-2">
-								{product.reviews} reviews
-							</span>
-						</div>
+  const cartTotal = cart.reduce((total, item) => total + parseFloat(item.price), 0);
 
-						{/* Add to Cart Button */}
-						<button
-							className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg flex items-center"
-							onClick={() => addToCart(product)}
-						>
-							<FiShoppingCart className="mr-2" /> Add to Cart
-						</button>
-					</div>
-				))}
-			</div>
-		</div>
-	);
+  return (
+    <div className="w-full max-w-md p-4 bg-white rounded shadow-lg">
+      <h2 className="text-xl font-bold mb-4">My Cart</h2>
+      <div>
+        {cart.map((item) => (
+          <div key={item.id} className="flex justify-between items-center mb-4">
+            <div className="flex items-center">
+              <div className="w-16 h-16 relative">
+                <Image src={item.image} alt={item.name} layout="fill" objectFit="cover" />
+              </div>
+              <div className="ml-4">
+                <h3 className="text-lg font-bold">{item.name}</h3>
+                <p className="text-gray-500">{item.price}</p>
+              </div>
+            </div>
+            <button onClick={() => removeFromCart(item.id)} className="text-red-500 hover:text-red-700">
+              <FiTrash size={20} />
+            </button>
+          </div>
+        ))}
+      </div>
+      <div className="text-right font-bold">Subtotal: ${cartTotal.toFixed(2)}</div>
+      <button className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mt-4">Checkout</button>
+    </div>
+  );
 };
 
-export default ProductListSection;
+export default Cart;
