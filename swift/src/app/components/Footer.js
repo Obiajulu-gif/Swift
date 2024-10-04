@@ -1,5 +1,6 @@
 import React from "react";
 import { FiMail, FiPhone, FiGithub, FiTwitter } from "react-icons/fi";
+import Image from "next/image"; // Importing Next.js Image component
 
 const Footer = () => {
 	// Get the current year dynamically
@@ -11,10 +12,13 @@ const Footer = () => {
 				{/* Logo Section */}
 				<div>
 					<div className="mb-4">
-						<img
+						{/* Using Next.js Image component */}
+						<Image
 							src="/images/logo.png"
 							alt="SwiftTeam Logo"
-							className="h-10 w-auto animate-pulse"
+							width={40}
+							height={40}
+							className="animate-pulse"
 						/>
 					</div>
 					<p>
@@ -26,12 +30,6 @@ const Footer = () => {
 				<div>
 					<h4 className="text-lg font-bold mb-4">Quick Links</h4>
 					<ul className="space-y-2">
-						{/* <Link href="/development" className="hover:underline">
-							Development Tools
-						</Link>
-						<Link href="/productdetail" className="hover:underline">
-							Product
-						</Link> */}
 						<li>
 							<a href="#faq" className="hover:underline">
 								Help

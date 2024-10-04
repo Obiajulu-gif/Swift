@@ -49,13 +49,19 @@ const Sidebar = () => {
 				<div>
 					{/* Logo visible on large screens */}
 					<div className="hidden lg:flex items-center mb-10">
-						<Image
-							src="/images/logo.png"
-							alt="SwiftTeam Logo"
-							width={40}
-							height={40}
-						/>
-						<h2 className="text-xl font-bold ml-2">SwiftTeam</h2>
+						<Link href="/" passHref>
+							{" "}
+							{/* Wrap the div in the Link component */}
+							<div className="cursor-pointer flex items-center">
+								<Image
+									src="/images/logo.png"
+									alt="SwiftTeam Logo"
+									width={40}
+									height={40}
+								/>
+								<h2 className="text-xl font-bold ml-2">SwiftTeam</h2>
+							</div>
+						</Link>
 					</div>
 
 					{/* Menu Section */}
