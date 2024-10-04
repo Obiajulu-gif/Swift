@@ -7,11 +7,11 @@ const ServicesSection = () => {
 			<div className="text-center mb-12">
 				<h1 className="text-4xl font-extrabold mb-4 text-black">
 					<span className="text-orange-600">Build In Minutes,</span> Publish
-					Sites In Seconds.
+					Projects In Seconds.
 				</h1>
 				<p className="text-gray-600 text-lg">
-					Turn Your Ideas Into a Real Website Quickly. Select From Thousands of
-					Free And Premium Website Templates And Customize Them As You See Fit.
+					Turn Your Ideas Into a Wealth. Select From Thousands of
+					Free And Premium Products And Customize Them As You See Fit.
 				</p>
 			</div>
 
