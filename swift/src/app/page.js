@@ -6,6 +6,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import TeamSection from "./components/TeamSection";
 import FAQSection from "./components/FAQSection";
 import HeroSectionBottom from "./components/HeroSectionBottom";
+
 export default function LandingPage() {
 	return (
 		<div className="min-h-screen text-white">
