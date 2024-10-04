@@ -1,11 +1,5 @@
 import React from "react";
-import {
-	FiMail,
-	FiPhone,
-	FiInstagram,
-	FiTwitter,
-	FiLinkedin,
-} from "react-icons/fi";
+import { FiMail, FiPhone, FiGithub, FiTwitter } from "react-icons/fi";
 
 const Footer = () => {
 	// Get the current year dynamically
@@ -32,18 +26,14 @@ const Footer = () => {
 				<div>
 					<h4 className="text-lg font-bold mb-4">Quick Links</h4>
 					<ul className="space-y-2">
+						<Link href="/development" className="hover:underline">
+							Development Tools
+						</Link>
+						<Link href="/productdetail" className="hover:underline">
+							Product
+						</Link>
 						<li>
-							<a href="#" className="hover:underline">
-								Development Tools
-							</a>
-						</li>
-						<li>
-							<a href="#" className="hover:underline">
-								Contact Us
-							</a>
-						</li>
-						<li>
-							<a href="#" className="hover:underline">
+							<a href="#faq" className="hover:underline">
 								Help
 							</a>
 						</li>
