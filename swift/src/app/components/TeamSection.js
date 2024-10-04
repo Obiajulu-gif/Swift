@@ -9,29 +9,29 @@ const TeamSection = () => {
 			image: "/images/teamLead.png",
 		},
 		{
-			name: "Joshua",
-			role: "Backend Developer",
-			image: "/images/team-member.jpg",
-		},
-		{
 			name: "Nwogu Victoria",
 			role: "Content Writer",
-			image: "/images/team-member.jpg",
+			image: "/images/vee.jpg",
+		},
+		{
+			name: "Joshua",
+			role: "Backend Developer",
+			image: "/images/joshua.jpg",
 		},
 		{
 			name: "Nwofor Chigozie Israel",
 			role: "Community Manager",
-			image: "/images/team-member.jpg",
-		},
-		{
-			name: "Victor Damian",
-			role: "Frontend Developer",
-			image: "/images/team-member.jpg",
+			image: "/images/israel.jpg",
 		},
 		{
 			name: "David Elumelo",
 			role: "UI/UX Designer",
-			image: "/images/team-member.jpg",
+			image: "/images/david.jpg",
+		},
+		{
+			name: "Ekeke kekachi Chisomaga",
+			role: "Frontend Developer",
+			image: "/images/keka.jpg",
 		},
 	];
 

@@ -40,7 +40,10 @@ const Navbar = () => {
 	return (
 		<nav className="bg-black text-white p-4">
 			<div className="container mx-auto px-4 flex justify-between items-center">
-				<Link href="/" className="flex items-center cursor-pointer">
+				<Link
+					href="/"
+					className="flex items-center cursor-pointer animate-pulse"
+				>
 					<Image
 						src="/images/logo.png"
 						alt="Swift Logo"
@@ -70,17 +73,19 @@ const Navbar = () => {
 						Help
 					</Link>
 					<div onClick={toggleCart} className="relative cursor-pointer">
-						<FiShoppingCart size={20} />
+						<FiShoppingCart size={40} />
 						{cartCount > 0 && (
 							<span className="absolute top-0 right-0 px-2 py-1 text-xs font-bold bg-red-600 text-white rounded-full">
 								{cartCount}
 							</span>
 						)}
 					</div>
-					<button className="ml-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">
-						<FiUser className="inline mr-2" />
-						Become a Merchant
-					</button>
+					<Link href="/dashboard">
+						<button className="ml-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">
+							<FiUser className="inline mr-2" />
+							Become a Merchant
+						</button>
+					</Link>
 				</div>
 			</div>
 

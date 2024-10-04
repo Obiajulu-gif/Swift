@@ -2,6 +2,13 @@ import CategorySection from "./CategorySection";
 import ProductListSection from "./ProductListSection";
 import HeroSection from "./HeroSection"; // Ensure HeroSection is imported
 
+export const metadata = {
+	title: "Development ",
+	description: "A platform to sell digital products",
+	icons: {
+		icon: "/images/logo.png",
+	},
+};
 export default function DevelopmentPage() {
 	return (
 		<>

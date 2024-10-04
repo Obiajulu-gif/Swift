@@ -24,7 +24,7 @@ const Hero = () => {
 					</Link>
 				</div>
 				{/* Left Icon */}
-				<div className="hidden md:block absolute left-40 top-1/2 transform -translate-y-1/2 z-10">
+				<div className="hidden md:block absolute left-40 top-1/2 animate-bounce transform -translate-y-1/2 z-10">
 					<Image
 						src="/images/GITHUB.png" // Update with the actual image path
 						alt="Left Icon"
@@ -33,7 +33,7 @@ const Hero = () => {
 					/>
 				</div>
 				{/* Right Icon */}
-				<div className="hidden md:block absolute right-40 top-1/2 transform -translate-y-1/2 z-10">
+				<div className="hidden md:block absolute right-40 top-1/2 animate-bounce transform -translate-y-1/2 z-10">
 					<Image
 						src="/images/JAVASCRIPT.png" // Update with the actual image path
 						alt="Right Icon"

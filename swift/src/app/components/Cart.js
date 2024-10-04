@@ -10,6 +10,7 @@ const Cart = ({ onClose }) => {
 	useEffect(() => {
 		const savedCart = JSON.parse(localStorage.getItem("cart")) || [];
 		setCart(savedCart);
+		console.log(savedCart)
 	}, []);
 
 	const removeFromCart = (productId) => {
