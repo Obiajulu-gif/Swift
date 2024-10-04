@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FiShoppingCart, FiHeart, FiStar } from "react-icons/fi";
-import { useCart } from "../components/CartContext"; 
+import { useCart } from "./CartContext"; 
 
 const ProductListSection = () => {
 	const { addToCart } = useCart(); // Get addToCart function from context
@@ -31,30 +31,7 @@ const ProductListSection = () => {
 			rating: 5,
 			reviews: 91,
 		},
-		{
-			id: 4,
-			name: "OpenAI GPT-4o mini",
-			image: "/images/openai.png",
-			price: "Free",
-			rating: 5,
-			reviews: 91,
-		},
-		{
-			id: 5,
-			name: "NFT Studio",
-			image: "/images/NFTStudio.png",
-			price: "95.00",
-			rating: 5,
-			reviews: 91,
-		},
-		{
-			id: 6,
-			name: "DataGuard Security Suite",
-			image: "/images/DAPP.png",
-			price: "95.00",
-			rating: 5,
-			reviews: 91,
-		},
+		// Other products...
 	];
 
 	return (

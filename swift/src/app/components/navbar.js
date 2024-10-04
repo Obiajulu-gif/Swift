@@ -1,10 +1,13 @@
-"use client";
+"use client"
 import React, { useState } from "react";
 import Link from "next/link";
-import { FiMenu, FiX } from "react-icons/fi";
+import Image from "next/image";
+import { FiMenu, FiX, FiUser, FiShoppingCart } from "react-icons/fi";
+import { useCart } from "./CartContext"; // Import the useCart hook
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const { cartCount } = useCart(); // Get the cart count from context
 
 	// Function to toggle the menu visibility
 	const toggleMenu = () => {
@@ -13,13 +16,15 @@ const Navbar = () => {
 
 	return (
 		<nav className="bg-black text-white p-4">
-			<div className="container mx-auto flex justify-between items-center">
+			<div className="container mx-auto px-4 flex justify-between items-center">
 				{/* Logo Section - Always visible */}
 				<Link href="/" className="flex items-center cursor-pointer">
-					<img
+					<Image
 						src="/images/logo.png"
 						alt="SwiftTeam Logo"
-						className="h-10 w-10 animate-pulse"
+						width={40}
+						height={40}
+						className="animate-pulse"
 					/>
 					<span className="ml-3 text-xl font-semibold">Swift</span>
 				</Link>
@@ -34,48 +39,47 @@ const Navbar = () => {
 					</button>
 				</div>
 
-				{/* Navigation Links - Visible on larger screens, hidden on mobile */}
-				<div className="hidden lg:flex lg:space-x-6">
+				{/* Navigation Links and Wallet Button - Aligned to the right */}
+				<div className="hidden lg:flex items-center space-x-6 ml-auto">
 					<Link href="/development" className="hover:text-blue-500">
 						Development Tools
 					</Link>
-					<Link href="/productdetail" className="hover:text-blue-500">
-						Product
-					</Link>
-
 					<a href="#footer" className="hover:text-blue-500">
 						Contact Us
 					</a>
 					<a href="#faq" className="hover:text-blue-500">
 						Help
 					</a>
-				</div>
-
-				{/* Wallet Button - Visible on larger screens */}
-				<div className="hidden lg:block">
-					<button className="ml-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg animation-bounce shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl focus:outline-none">
-						Connect Wallet
+					<Link href="/cart" className="hover:text-blue-500">
+						<div className="relative">
+							<FiShoppingCart size={20} />
+							{cartCount > 0 && (
+								<span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full">
+									{cartCount}
+								</span>
+							)}
+						</div>
+					</Link>
+					<button className="ml-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">
+						<FiUser className="inline mr-2" /> Become a merchant
 					</button>
 				</div>
 			</div>
 
-			{/* Dropdown menu for mobile - Only visible when menu is open */}
+			{/* Dropdown menu for mobile */}
 			{isOpen && (
 				<div className="lg:hidden flex flex-col items-start space-y-4 mt-4">
 					<Link href="/development" className="hover:text-blue-500">
 						Development Tools
 					</Link>
-					<Link href="/productdetail" className="hover:text-blue-500">
-						Product
-					</Link>
 					<a href="#footer" className="hover:text-blue-500">
 						Contact Us
 					</a>
 					<a href="#faq" className="hover:text-blue-500">
 						Help
 					</a>
-					<button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded animation-bounce shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl focus:outline-none">
-						Connect Wallet
+					<button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+						Become a merchant
 					</button>
 				</div>
 			)}

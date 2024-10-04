@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
 	return (
 		<>
 			{/* Hero Section with Gradient */}
 			<section className="relative flex flex-col items-center justify-center min-h-screen text-white bg-gradient-to-b from-black via-[#6B250E] via-[#FF5722] to-[#FFB299] bg-bottom bg-ellipse">
-				
 				{/* Hero Content */}
-				<div className="flex flex-col items-center text-center z-10 mt-4">					<h1 className="text-5xl font-extrabold leading-tight mb-4">
+				<div className="flex flex-col items-center text-center z-10 mt-4">
+					<h1 className="text-5xl font-extrabold leading-tight mb-4">
 						Build Faster with <br /> Sui Blockchain Tools.
 					</h1>
 					<p className="text-xl mb-8">
@@ -16,9 +17,11 @@ const Hero = () => {
 						<br />
 						seamlessly, and get back to building faster.
 					</p>
-					<button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg">
-						Explore Sui Dev Tools
-					</button>
+					<Link href="/development">
+						<button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg">
+							Explore Swift Dev Tools
+						</button>
+					</Link>
 				</div>
 				{/* Left Icon */}
 				<div className="hidden md:block absolute left-40 top-1/2 transform -translate-y-1/2 z-10">

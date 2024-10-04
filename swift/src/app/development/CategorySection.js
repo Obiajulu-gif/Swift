@@ -16,7 +16,7 @@ const CategorySection = () => {
 	];
 
 	return (
-		<div className="bg-white p-4 rounded-lg shadow-md w-1/4">
+		<div className="bg-white rounded-lg shadow-md w-3/4">
 			<h2 className="text-xl font-bold mb-4">Categories</h2>
 
 			{/* Search Box */}

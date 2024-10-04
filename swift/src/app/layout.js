@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Head from "next/head";
+import { CartProvider } from "./components/CartContext"; 
 
 export const metadata = {
 	title: "Swift",
@@ -16,10 +17,11 @@ export default function RootLayout({ children }) {
 				<link rel="icon" href="/images/logo.png" />
 			</Head>
 			<body>
-				{/*********************************Navbar Section **********************************/}
-				<Navbar />
-				<main>{children}</main> {/* Render all child components/pages */}
-				<Footer />
+				<CartProvider>
+					<Navbar />
+					<main>{children}</main> 
+					<Footer />
+				</CartProvider>
 			</body>
 		</html>
 	);
