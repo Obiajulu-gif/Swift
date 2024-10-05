@@ -20,7 +20,7 @@ export default function LandingPage() {
 			<ServicesSection />
 			<WhyChooseUs />
 			<TeamSection />
-			<FAQSectoindgdj />
+			<FAQSection />
 			<HeroSectionBottom />
 		</div>
 	);
