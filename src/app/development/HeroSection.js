@@ -14,7 +14,7 @@ export default function HeroSection() {
 				<p className="text-base sm:text-lg mb-6">
 					Our innovative Web3 marketplace empowers creators, collectors, and
 					investors to engage in a decentralized ecosystem where transparency
-					and security are paramount.
+					and security are paramount...
 				</p>
 
 				{/* Search Bar */}
