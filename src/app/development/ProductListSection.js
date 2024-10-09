@@ -86,8 +86,8 @@ const ProductListSection = () => {
 								className="rounded-t-lg"
 							/>
 						</div>
-						<h3 className="mt-4 text-lg font-bold">{product.name}</h3>
-						<p className="text-gray-500 mb-2">${product.price}</p>
+						<h3 className="mt-4 text-lg font-bold text-black">{product.name}</h3>
+						<p className="text-gray-700 mb-2">${product.price}</p>
 
 						{/* Star Ratings */}
 						<div className="flex items-center mb-2">
@@ -96,7 +96,7 @@ const ProductListSection = () => {
 								.map((_, i) => (
 									<FiStar key={i} className="text-yellow-500" />
 								))}
-							<span className="text-sm text-gray-500 ml-2">
+							<span className="text-sm text-gray-900 ml-2">
 								{product.reviews} reviews
 							</span>
 						</div>
