@@ -1,13 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import React from "react";
 import { FaSearch } from "react-icons/fa";
 
 export default function HeroSection() {
 	const [text, setText] = useState("");
 	const fullText =
-		"Our  innovative Web3 marketplace empowers creators, collectors, and investors to engage in a decentralized ecosystem where transparency and security are paramount...";
+		"Our innovative Web3 marketplace empowers creators, collectors, and investors to engage in a decentralized ecosystem where transparency and security are paramount...";
 
 	useEffect(() => {
 		let index = 0;
@@ -20,7 +19,7 @@ export default function HeroSection() {
 			}
 		}, 50); // Adjust typing speed by changing the interval (ms)
 		return () => clearInterval(interval); // Cleanup interval on component unmount
-	}, [fullText]);
+	}, []); // Make sure this effect only runs once on mount
 
 	return (
 		<div className="relative overflow-hidden bg-gradient-to-b from-black to-orange-900 text-white py-16 px-6 sm:px-8">
