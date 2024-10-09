@@ -1,0 +1,12 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = "mongodb+srv://okoyeemmanuel998:82sQtCGVjOVpO8pb@cluster0swift.mp7to.mongodb.net/swiftdb?retryWrites=true&w=majority&appName=Cluster0swift"
+}
+
+model users {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}

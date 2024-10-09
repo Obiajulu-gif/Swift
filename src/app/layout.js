@@ -9,6 +9,8 @@ import Footer from "./components/Footer";
 import Sidebar from "./dashboard/sidebar";
 import TopBar from "./dashboard/topbar";
 
+import { SessionProvider } from "next-auth/react";
+
 export default function RootLayout({ children }) {
 	const pathname = usePathname(); // Get the current pathname
 
@@ -18,6 +20,8 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body>
+			<SessionProvider>
+
 				<CartProvider>
 					{isDashboard ? (
 						// Dashboard layout with Sidebar and TopBar
@@ -37,6 +41,7 @@ export default function RootLayout({ children }) {
 						</>
 					)}
 				</CartProvider>
+			</SessionProvider>
 			</body>
 		</html>
 	);
