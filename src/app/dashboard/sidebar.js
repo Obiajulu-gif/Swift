@@ -92,7 +92,7 @@ const Sidebar = () => {
 									<span>Orders</span>
 									{/* Notification Badge */}
 									<span className="absolute right-0 top-0 mt-1 mr-2 text-xs font-semibold leading-none text-white bg-orange-500 rounded-full px-2 py-1">
-										21
+										11
 									</span>
 								</Link>
 							</li>
