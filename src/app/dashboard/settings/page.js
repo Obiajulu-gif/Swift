@@ -27,7 +27,7 @@ const Settings = () => {
 	};
 
 	return (
-		<div className="flex flex-col lg:flex-row p-6 space-y-6 lg:space-y-0 lg:space-x-6">
+		<div className="flex flex-col lg:flex-row p-6 space-y-6 lg:space-y-0 lg:space-x-6 text-black">
 			{/* Sidebar */}
 			<div className="w-full lg:w-1/4 bg-white p-4 border rounded-lg">
 				<ul className="space-y-4">

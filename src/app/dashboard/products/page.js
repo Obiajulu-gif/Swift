@@ -38,7 +38,7 @@ const ProductDashboard = () => {
 	];
 
 	return (
-		<div className="p-6">
+		<div className="p-6 text-black">
 			{/* Header and Button */}
 			<div className="flex justify-between items-center mb-4">
 				<h2 className="text-2xl font-bold">Products</h2>
