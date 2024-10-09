@@ -12,7 +12,7 @@ const Hero = () => {
 		let index = 0;
 		const interval = setInterval(() => {
 			if (index < fullText.length) {
-				setText((prev) => prev + fullText[index]);
+				setText((prev) => prev + fullText[index-1]);
 				index++;
 			} else {
 				clearInterval(interval); // Stop the interval once the text is fully typed
