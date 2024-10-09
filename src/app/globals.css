@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #ededed; 
-  --foreground: #171717;
+  --background: #f0f4f8; /* Soft blue background */
+  --foreground: #333333; /* Dark gray foreground */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ededed; 
-    --foreground: #ededed;
+    --background: #1a202c; /* Dark blue background for dark mode */
+    --foreground: #f0f4f8; /* Light gray foreground for dark mode */
   }
 }
 
@@ -24,6 +24,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}html {
+}
+
+html {
   scroll-behavior: smooth;
 }
