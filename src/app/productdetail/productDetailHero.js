@@ -36,7 +36,7 @@ const ProductDetail = () => {
 
         {/* Right: Product Details */}
         <div className="lg:w-1/2 space-y-4">
-          <h1 className="text-3xl font-bold">CodeCraft Pro</h1>
+          <h1 className="text-3xl font-bold text-black">CodeCraft Pro</h1>
           <p className="text-gray-500">
             Ready for 3D print. Ready to make on CNC Machine. No undercuts. Minimum angle it takes is 60 degrees to surface.
           </p>
@@ -49,7 +49,7 @@ const ProductDetail = () => {
           <div className="flex items-center space-x-2">
             <div className="flex space-x-1">
               {Array(5).fill().map((_, i) => (
-                <FiStar key={i} className="text-yellow-500" />
+                <FiStar key={i} className="text-yellow-700" />
               ))}
             </div>
             <span className="text-gray-500">(132 Reviews)</span>
