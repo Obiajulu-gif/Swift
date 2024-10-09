@@ -11,8 +11,8 @@ const Hero = () => {
 	useEffect(() => {
 		let index = 0;
 		const interval = setInterval(() => {
-			if (index < fullText.length) {
-				setText((prev) => prev + fullText[index-1]);
+			if (index < fullText.length - 1) {
+				setText((prev) => prev + fullText[index]);
 				index++;
 			} else {
 				clearInterval(interval); // Stop the interval once the text is fully typed
