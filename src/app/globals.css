@@ -12,7 +12,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #d23333;
+    --background: #cc7a7a;
     --foreground: #ededed;
     --card-bg: #1f2937;
     --input-border: #4b5563;
