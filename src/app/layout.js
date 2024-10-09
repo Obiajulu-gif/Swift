@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
 						// Dashboard layout with Sidebar and TopBar
 						<div className="flex h-screen">
 							<Sidebar />
-							<div className="flex-1 bg-gray-100">
+							<div className="flex-1">
 								<TopBar />
 								<main className="p-6 space-y-6">{children}</main>
 							</div>
