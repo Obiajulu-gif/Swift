@@ -52,7 +52,7 @@ const Footer = () => {
 					{/* Social Icons */}
 					<div className="flex space-x-4 mt-4">
 						<a
-							href="https:/twitter.com/TeamSwiftsui"
+							href="https://twitter.com/SuiTeamswift"
 							className="hover:text-gray-400"
 						>
 							<FiTwitter size={20} />
@@ -85,7 +85,7 @@ const Footer = () => {
 						</button>
 					</form>
 					<p className="text-sm text-gray-400 mt-2">
-						*Subscribe to our newsletter to receive early discount offers,
+						Subscribe to our newsletter to receive early discount offers,
 						updates, and new product info.
 					</p>
 				</div>

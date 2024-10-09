@@ -1,8 +1,27 @@
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import React from "react";
 import { FaSearch } from "react-icons/fa";
 
 export default function HeroSection() {
+	const [text, setText] = useState("");
+	const fullText =
+		"Our  innovative Web3 marketplace empowers creators, collectors, and investors to engage in a decentralized ecosystem where transparency and security are paramount...";
+
+	useEffect(() => {
+		let index = 0;
+		const interval = setInterval(() => {
+			if (index < fullText.length - 1) {
+				setText((prev) => prev + fullText[index]);
+				index++;
+			} else {
+				clearInterval(interval); // Stop the interval once the text is fully typed
+			}
+		}, 50); // Adjust typing speed by changing the interval (ms)
+		return () => clearInterval(interval); // Cleanup interval on component unmount
+	}, [fullText]);
+
 	return (
 		<div className="relative overflow-hidden bg-gradient-to-b from-black to-orange-900 text-white py-16 px-6 sm:px-8">
 			{/* Hero Content */}
@@ -11,11 +30,7 @@ export default function HeroSection() {
 					At Swift, we’re redefining how you buy, sell, and trade in the digital
 					realm.
 				</h1>
-				<p className="text-base sm:text-lg mb-6">
-					Our innovative Web3 marketplace empowers creators, collectors, and
-					investors to engage in a decentralized ecosystem where transparency
-					and security are paramount...
-				</p>
+				<p className="text-base sm:text-lg mb-6">{text}</p>
 
 				{/* Search Bar */}
 				<div className="flex flex-col sm:flex-row items-center sm:space-x-2 mt-4 sm:mt-6">
