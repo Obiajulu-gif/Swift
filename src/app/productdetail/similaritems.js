@@ -53,7 +53,7 @@ const SimilarItems = () => {
 
 	return (
 		<div className="max-w-screen-lg mx-auto py-8">
-			<h2 className="text-lg font-semibold mb-4">
+			<h2 className="text-lg font-semibold mb-4 text-black">
 				Similar Items You Might Like
 			</h2>
 
@@ -75,7 +75,7 @@ const SimilarItems = () => {
 						</div>
 
 						{/* Product Info */}
-						<h3 className="text-sm font-semibold mb-1">{product.name}</h3>
+						<h3 className="text-sm font-semibold mb-1 text-black">{product.name}</h3>
 						<p className="text-gray-500 text-xs mb-1">{product.seller}</p>
 						<p className="text-gray-900 font-semibold mb-1">${product.price}</p>
 
