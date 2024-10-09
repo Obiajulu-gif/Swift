@@ -41,7 +41,7 @@ const SignInPage = () => {
 						alt="Project Logo"
 						width={60}
 						height={60}
-						className="rounded-full animation-spin"
+						className="rounded-full animation-pulse"
 					/>
 				</div>
 				<h2 className="text-3xl font-semibold mb-6 text-center text-orange-500">
