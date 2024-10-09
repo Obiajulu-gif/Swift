@@ -28,11 +28,6 @@ const TeamSection = () => {
 			role: "UI/UX Designer",
 			image: "/images/david.jpg",
 		},
-		{
-			name: "Ekeke kekachi Chisomaga",
-			role: "Frontend Developer",
-			image: "/images/keka.jpg",
-		},
 	];
 
 	return (
