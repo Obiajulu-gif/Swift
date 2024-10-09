@@ -3,7 +3,7 @@ import { FiSearch, FiBell } from "react-icons/fi";
 
 const TopBar = () => {
 	return (
-		<header className="flex justify-between items-center py-4 px-6 bg-white border-b">
+		<header className="flex justify-between items-center py-4 px-6 bg-white border-b text-black">
 			<div className="flex items-center">
 				<input
 					type="text"

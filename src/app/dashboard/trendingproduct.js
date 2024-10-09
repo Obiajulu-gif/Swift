@@ -37,7 +37,7 @@ const TrendingProducts = () => {
 	];
 
 	return (
-		<div className="bg-white p-6 rounded-lg shadow-md">
+		<div className="bg-white p-6 rounded-lg shadow-md text-black">
 			<div className="flex justify-between items-center mb-4">
 				<h2 className="text-lg font-semibold">Trending Products</h2>
 				<button className="text-gray-400 hover:text-gray-600">

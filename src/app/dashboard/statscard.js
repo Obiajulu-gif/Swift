@@ -22,7 +22,7 @@ const StatsCards = () => {
 
 	return (
 		<>
-			<div className="flex justify-between items-center mb-6">
+			<div className="flex justify-between items-center mb-6 text-black">
 				<h2 className="text-lg font-semibold">Overview</h2>
 				{/* Date Filter */}
 				<button className="bg-white border border-gray-300 rounded-lg py-2 px-4 flex items-center space-x-2">
@@ -31,7 +31,7 @@ const StatsCards = () => {
 				</button>
 			</div>
 
-			<div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+			<div className="grid grid-cols-1 lg:grid-cols-3 gap-6 text-black">
 				{stats.map((stat, index) => (
 					<div
 						key={index}

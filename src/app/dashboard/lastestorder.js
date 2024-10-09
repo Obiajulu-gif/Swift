@@ -31,7 +31,7 @@ const LatestOrders = () => {
 	]);
 
 	return (
-		<div className="bg-white p-6 rounded-lg shadow-md">
+		<div className="bg-white p-6 rounded-lg shadow-md text-black">
 			<div className="flex justify-between items-center mb-4">
 				<h2 className="text-lg font-semibold">Latest Orders</h2>
 				<button className="flex items-center space-x-1 px-3 py-2 border rounded-md text-gray-600 hover:bg-gray-100">
