@@ -6,7 +6,7 @@ import Link from "next/link";
 const Hero = () => {
 	const [text, setText] = useState("");
 	const fullText =
-		"A /t marketplace tailored for developers, discover the best tools, pay seamlessly, and get back to building faster./n";
+		"A  marketplace tailored for developers, discover the best tools, pay seamlessly, and get back to building faster.";
 
 	useEffect(() => {
 		let index = 0;
@@ -19,7 +19,7 @@ const Hero = () => {
 			}
 		}, 50); // Adjust typing speed by changing the interval (ms)
 		return () => clearInterval(interval); // Cleanup interval on component unmount
-	}, []);
+	}, [fullText]);
 
 	return (
 		<>
