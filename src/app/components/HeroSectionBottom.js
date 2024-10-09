@@ -12,7 +12,7 @@ const HeroSectionBottom = () => {
 					A marketplace tailored for developers – discover the best tools, pay
 					seamlessly, and get back to building faster.
 				</p>
-				<Link href="/dashboard">
+				<Link href="/development">
 					<button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-lg text-lg font-semibold">
 						Explore Sui Dev Tools
 					</button>

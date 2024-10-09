@@ -6,7 +6,7 @@ import Link from "next/link";
 const Hero = () => {
 	const [text, setText] = useState("");
 	const fullText =
-		"A marketplace tailored for developers, discover the best tools, pay seamlessly, and get back to building faster.";
+		"A /t marketplace tailored for developers, discover the best tools, pay seamlessly, and get back to building faster./n";
 
 	useEffect(() => {
 		let index = 0;
