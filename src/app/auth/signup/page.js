@@ -41,10 +41,10 @@ const SignUpPage = () => {
 						alt="Project Logo"
 						width={60}
 						height={60}
-						className="rounded-full animation-spin"
+						className="rounded-full animation-spin "
 					/>
 				</div>
-				<h2 className="text-3xl font-semibold mb-6 text-center text-orange-500">
+				<h2 className="text-3xl font-semibold mb-6 text-center text-orange-500 ">
 					Sign Up
 				</h2>
 				{error && <p className="text-red-500 mb-4 text-center">{error}</p>}
@@ -54,7 +54,7 @@ const SignUpPage = () => {
 						placeholder="Email"
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
-						className="w-full p-3 border rounded focus:border-orange-500 outline-none"
+						className="w-full p-3 border rounded focus:border-orange-500 outline-none text-black"
 						required
 					/>
 					<input
@@ -62,7 +62,7 @@ const SignUpPage = () => {
 						placeholder="Password"
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
-						className="w-full p-3 border rounded focus:border-orange-500 outline-none"
+						className="w-full p-3 border rounded focus:border-orange-500 outline-none text-black"
 						required
 					/>
 					<button

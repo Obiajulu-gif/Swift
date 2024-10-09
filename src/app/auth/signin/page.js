@@ -54,7 +54,7 @@ const SignInPage = () => {
 						placeholder="Email"
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
-						className="w-full p-3 border rounded focus:border-orange-500 outline-none"
+						className="w-full p-3 border rounded focus:border-orange-500 outline-none text-black"
 						required
 					/>
 					<input
@@ -62,7 +62,7 @@ const SignInPage = () => {
 						placeholder="Password"
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
-						className="w-full p-3 border rounded focus:border-orange-500 outline-none"
+						className="w-full p-3 border rounded focus:border-orange-500 outline-none text-black"
 						required
 					/>
 					<button
