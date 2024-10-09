@@ -6,7 +6,7 @@ import { FaSearch } from "react-icons/fa";
 export default function HeroSection() {
 	const [text, setText] = useState("");
 	const fullText =
-		" Our innovative Web3 marketplace empowers creators, collectors, and investors to engage in a decentralized ecosystem where transparency and security are paramount...";
+		"   Our innovative Web3 marketplace empowers creators, collectors, and investors to engage in a decentralized ecosystem where transparency and security are paramount...";
 
 	useEffect(() => {
 		let index = 0;
