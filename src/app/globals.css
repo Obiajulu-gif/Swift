@@ -3,29 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --background: #f0f4f8; /* Soft blue background */
-  --foreground: #333333; /* Dark gray foreground */
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #f97316; /* Orange for highlights */
+  --card-bg: #f9fafb;
+  --input-border: #d1d5db;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1a202c; /* Dark blue background for dark mode */
-    --foreground: #f0f4f8; /* Light gray foreground for dark mode */
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --card-bg: #1f2937;
+    --input-border: #4b5563;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply text-white bg-primary hover:bg-orange-600 rounded-lg px-4 py-2 transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-card-bg p-6 rounded-lg shadow-lg;
+  }
+
+  .input-field {
+    @apply w-full px-3 py-2 border border-input-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all;
+  }
+
+  .text-heading {
+    @apply text-3xl font-bold text-center mb-4 text-primary;
+  }
+
+  .text-link {
+    @apply text-primary hover:underline;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-html {
-  scroll-behavior: smooth;
 }
