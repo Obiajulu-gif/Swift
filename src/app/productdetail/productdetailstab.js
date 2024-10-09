@@ -66,7 +66,7 @@ const ProductDetailsTabs = () => {
 				{/* Right: Tags Section */}
 				<div className="lg:w-1/4 w-full lg:pl-8">
 					<div className="bg-white p-6 rounded-lg shadow-md">
-						<h4 className="font-semibold mb-4">Tags</h4>
+						<h4 className="font-semibold mb-4 text-black">Tags</h4>
 						<div className="flex flex-wrap gap-2">
 							<span className="px-3 py-1 bg-gray-100 rounded-lg text-sm text-gray-600">
 								User Interface Components

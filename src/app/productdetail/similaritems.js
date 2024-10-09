@@ -94,7 +94,7 @@ const SimilarItems = () => {
 						</div>
 
 						{/* Add to Cart Button */}
-						<button className="flex items-center px-4 py-2 bg-gray-200 rounded-lg text-gray-700 hover:bg-gray-300 text-xs">
+						<button className="flex items-center px-4 py-2 bg-gray-200 rounded-lg text-blue-400 hover:bg-gray-300 text-xs">
 							<FiShoppingCart className="mr-2" /> Add to Cart
 						</button>
 					</div>
