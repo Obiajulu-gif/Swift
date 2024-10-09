@@ -66,7 +66,7 @@ const Sidebar = () => {
 
 					{/* Menu Section */}
 					<nav>
-						<p className="uppercase text-sm text-gray-500 mb-4">Menu</p>
+						<Link href="/"><p className="uppercase text-sm text-gray-500 mb-4">Home Page</p></Link>
 						<ul className="space-y-4">
 							<li>
 								<Link
